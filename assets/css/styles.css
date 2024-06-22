@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+body{
+  background-color: #FFFFCC;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  width: 100%;
+  background: #301934;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  position: fixed;
+}
+
+nav .image-logo{
+  border-radius: 50%;
+}
+
+nav .logo{
+  background-color: #FFFFCC;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-size: 29px;
+  font-weight: 500;
+}
+nav ul{
+  padding-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+
+.inactive{ 
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 1s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active
+{ 
+  color: #301934;
+  background-image: linear-gradient(to right top, #a37709, #AF840A, #ffe647, #d4b11f, #946707);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 1s ease;
+}
+
+nav .menu-btn i{
+  color: #D4AF37;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #344a72;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 100% 30px;
+  color: #1b1b1b;
+  background-color: #FFFFCC;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.head-banner-home{
+  height: auto;
+  width: 100%;
+  top:80px;
+  position: fixed;
+  margin:0;
+  padding:0;
+}
+
+.head-banner-book-catalogue{
+  height: auto;
+  width: 100%;
+  top:80px;
+  position: absolute;
+  margin:0;
+  padding:0;
+}

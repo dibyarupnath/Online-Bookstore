@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+  
+.signup-box {
+    top: 80%;
+    width: 342px;
+    height: 510px;
+    margin: auto;
+    background-color: #D4AF37;
+    border-radius: 30px;
+}
+
+.signup-content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 100% 30px 100%;
+    color: #1b1b1b;
+    background-color: #FFFFCC;
+}
+
+.signup-content  h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+  
+.login-box {
+    width: 342px;
+    height: 300px;
+    margin: auto;
+    background-color: #D4AF37;
+    border-radius: 30px;
+}
+
+.login-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -1;
+    width: 100%;
+    padding: 100% 30px 100%;
+    color: #1b1b1b;
+    background-color: #FFFFCC;
+}
+
+.login-content  h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+  
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+  
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+  
+form input {
+    width: 100%;
+    padding: 7px;
+    border-color: #645b4e;
+    border: 1px solid #645B4E;
+    border-radius: 6px;
+    outline: none;
+    border-radius: 25px;
+}
+input[type="submit"] {
+    width: 300px;
+    height: 43px;
+    margin-top: 16px;
+    border-color: #645b4e;
+    background-color: #301934;
+    color: #FFFFCC;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #301934, #400d49,#41044b, #301934,#41044b, #400d49, #301934);
+}
+
+p {
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+}
+.tnc a{
+    color: #EEDECB;
+}
+.para-2 {
+    text-align: center;
+    color: #301934;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.para-2 a {
+    color: #D4AF37;
+}
+
+
+/* Input Fields */
+
+.input-icons span {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.material-symbols-outlined {
+    padding: 10px;
+    color: #301934;
+    min-width: 50px;
+    text-align: center;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
